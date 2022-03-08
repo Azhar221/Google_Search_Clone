@@ -6,7 +6,6 @@ import Avator from '@mui/material/Avatar/Avatar';
 import Search from './Search';
 
 
-
 function Home() {
     return (
         <div className='home'>
@@ -25,6 +24,7 @@ function Home() {
             <div className='home_body'>
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="" />
+
                 <div className='home_search'>
                     <Search />
 

@@ -18,26 +18,26 @@
 .home_header a:hover {
   text-decoration: underline;
 }
-.home_headerRight{
-    display: flex;
-    align-items: center;
-    min-width: 13vw;
-    justify-content: space-between;
+.home_headerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
 }
-.home_headerRight > .MuiSvgIcon-root{
-    margin-right: 20px;
+.home_headerRight > .MuiSvgIcon-root {
+  margin-right: 20px;
 }
-.home_body{
-    flex: 1;
-    display: flex;
-    margin-top: 10%;
-    flex-direction: column;
+.home_body {
+  flex: 1;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
 }
-.home_body > img{
-    object-fit: contain;
-    height: 100px;
+.home_body > img {
+  object-fit: contain;
+  height: 100px;
 }
-.search_input{
+.search_input {
   display: flex;
   align-items: center;
   border: 1px solid lightgrey;
@@ -49,15 +49,34 @@
   margin-top: 40px;
   max-width: 560px;
 }
-.search_input > input{
+.search_input > input {
   flex: 1;
   padding: 10px 20px;
   font-size: medium;
   border: none;
 }
-.search_input > input:focus{
+.search_input > input:focus {
   outline-width: 0;
 }
-.searchIcon{
+.searchIcon {
   color: gray;
+}
+.search_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.search_btn button {
+  margin: 5px;
+  padding: 7px 15px;
+  background-color: #f8f8f8;
+  border: 1px solid white;
+  text-transform: inherit;
+  color: #5f6368;
+}
+.search_btn button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  color: #222;
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
 }
