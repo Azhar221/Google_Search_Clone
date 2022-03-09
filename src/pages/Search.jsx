@@ -4,7 +4,7 @@ import MicIcon from '@mui/icons-material/MicOutlined';
 import { useNavigate } from 'react-router-dom';
 
 
-function Search() {
+function Search({ hideButtons = false }) {
 
     const [input, setInput] = useState("");
     const navigate = useNavigate();
@@ -21,10 +21,17 @@ function Search() {
                 <input value={input} onChange={e => setInput(e.target.value)} />
                 <MicIcon />
             </div>
-            <div className='search_btn'>
-                <button type="submit" onClick={search} variant='outlined'>Google Search</button>
-                <button variant='outlined'>I'm Feeling Lucky</button>
-            </div>
+            {!hideButtons ? (
+                <div className='search_btn'>
+                    <button type="submit" onClick={search} variant='outlined'>Google Search</button>
+                    <button variant='outlined'>I'm Feeling Lucky</button>
+                </div>
+            ) : (
+                <div className='search_btnHidden'>
+                    <button type="submit" onClick={search} variant='outlined'>Google Search</button>
+                    <button variant='outlined'>I'm Feeling Lucky</button>
+                </div>
+            )}
         </form>
     )
 }
