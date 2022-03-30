@@ -7,7 +7,8 @@ import { actionTypes } from "../reducer";
 
 
 function Search({ hideButtons = false }) {
-    const [{ }, dispatch] = useStateValue();
+    const [{}, dispatch] = useStateValue();
+
     const [input, setInput] = useState("");
     const navigate = useNavigate();
     const search = (e) => {
@@ -17,7 +18,7 @@ function Search({ hideButtons = false }) {
 
         dispatch({
             type: actionTypes.SET_SEARCH_TERM,
-            term: input,
+            term: input
         })
         navigate('/search');
     }
