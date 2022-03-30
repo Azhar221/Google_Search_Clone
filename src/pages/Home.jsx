@@ -29,7 +29,6 @@ function Home() {
                     {/* <Search hideButtons/> */}
                     <Search />
                 </div>
-
             </div>
         </div>
     )
